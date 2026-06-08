@@ -128,6 +128,46 @@ Interactive dashboard with:
 * Cost-sensitive threshold optimization
 * Multi-class delay prediction
 
+## 🚀 Running the Project & Accessing the Streamlit Dashboard
+
+This repository contains the complete end-to-end Jupyter Notebook used for data preprocessing, feature engineering, model training, explainability analysis, risk scoring, and deployment of an interactive Streamlit dashboard.
+
+**How to Run:**
+* Download or clone this repository.
+* Open the provided Jupyter Notebook (.ipynb) in Google Colab.
+* Upload the dataset (APL_Logistics.csv) when prompted.
+* Run all notebook cells sequentially from top to bottom.
+
+The notebook will automatically:
+
+* Perform Data Cleaning & Preprocessing
+* Conduct Exploratory Data Analysis (EDA)
+* Create engineered features
+* Train Logistic Regression, Random Forest, and XGBoost models
+* Generate SHAP explainability outputs
+* Save model artifacts (.pkl files)
+* Create the risk-scored dataset
+* Launch the Streamlit dashboard
+* Accessing the Dashboard
+
+At the end of the notebook execution, Streamlit is started automatically using:
+
+streamlit run apl_logistics_app.py --server.port=8501
+
+Google Colab then generates a public URL using its built-in port forwarding service:
+
+from google.colab import output
+public_url = output.eval_js(
+    "google.colab.kernel.proxyPort(8501)"
+)
+
+**The final output will display a link similar to:**
+
+https://xxxxxxxx-8501.colab.googleusercontent.com/
+
+**Click the generated URL to access the live Streamlit dashboard.**
+
+Note: The dashboard remains active only while the Google Colab runtime is running. If the runtime disconnects, the URL becomes inactive and a new URL will be generated when the notebook is executed again.
 ---
 
 **Author:** Swarnava Sarkar
