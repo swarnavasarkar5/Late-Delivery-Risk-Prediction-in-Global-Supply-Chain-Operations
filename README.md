@@ -172,3 +172,7 @@ Note: The dashboard remains active only while the Google Colab runtime is runnin
 
 **Author:** Swarnava Sarkar
 **Domain:** Supply Chain Analytics | Machine Learning | Predictive Logistics
+
+<img width="1500" height="630" alt="Dashboard_SS1" src="https://github.com/user-attachments/assets/be20fb06-fe7c-438f-b24f-681775f5194d" />
+
+
